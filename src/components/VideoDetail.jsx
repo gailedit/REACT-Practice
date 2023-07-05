@@ -32,11 +32,19 @@ const VideoDetail = () => {
             </Typography>
             <Stack direction="row" justifyContent="space-between" sx={{ color: '#fff' }} py={1} px={2}>
               <Link to={`/channel/${channelId}`}>
-                <Typography variant={{ sm: 'subtitle1', md: 'h6' }}>
+                <Typography variant={{ sm: 'subtitle1', md: 'h6' }} color="#fff">
                   {channelTitle}
+                  <CheckCircle sx={ {fontSize: '12px', color: 'gray', ml: '5px'}} />
                 </Typography>
               </Link>
-
+              <Stack direction="row" gap="20px" alignItems="center">
+                <Typography variant="body1" sx={{ opacity: 0.7}}>
+                  {parseInt(viewCount).toLocaleString()} views
+                </Typography>
+                <Typography variant="body1" sx={{ opacity: 0.7}}>
+                  {parseInt(likeCount).toLocaleString()} likes
+                </Typography>
+              </Stack>
             </Stack>
           </Box>
         </Box>
