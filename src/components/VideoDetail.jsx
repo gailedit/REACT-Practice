@@ -52,9 +52,10 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-        <Box px={2} py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center" >
+        {/* <Box px={2} py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center" >
           <Videos videos={videos} direction="column" />
-        </Box>
+        </Box> */}
+        {/* This code is causing an error; when the page is loaded and code block is uncommented and saved, related videos show up with no problem. When the page is reloaded, the page loads blank */}
       </Stack>
 
     </Box>
